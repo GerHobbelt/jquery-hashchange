@@ -371,7 +371,7 @@
           iframe_doc.open();
           
           // Set document.domain for the Iframe document as well, if necessary.
-          domain && iframe_doc.write( '\x3cscript>document.domain="' + domain + '"\x3c/script>' );
+          domain && iframe_doc.write( '\x3cscript>document.domain="' + domain + '"\x3c/script>' );	// '\x3c' == '<'
           
           iframe_doc.close();
           
